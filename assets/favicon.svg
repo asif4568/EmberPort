@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A65" />
+      <stop offset="100%" stop-color="#E64A19" />
+    </linearGradient>
+    <linearGradient id="secondaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#636E72" />
+      <stop offset="100%" stop-color="#1E272E" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#secondaryGradient)" />
+  
+  <!-- Ember Flame Icon (Simplified for favicon) -->
+  <path d="M256 128C256 128 288 160 288 192C288 224 256 240 256 272C256 304 288 336 288 368C288 400 256 432 224 432C192 432 160 400 160 368C160 336 192 304 192 272C192 240 160 224 160 192C160 160 192 128 192 96C192 64 224 32 256 32C288 32 320 64 320 96C320 128 288 160 256 192C256 160 224 128 256 128Z" fill="url(#primaryGradient)" />
+  
+  <!-- Letter E (Minimalist) -->
+  <path d="M208 176H304M208 256H288M208 336H304" stroke="white" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
