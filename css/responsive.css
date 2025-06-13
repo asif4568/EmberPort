@@ -1,0 +1,354 @@
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Large Devices (Desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+    }
+}
+
+/* Intermediate Breakpoint for Navbar */
+@media (max-width: 1080px) {
+    .nav-links {
+        display: none; /* Hide nav links earlier to prevent collapse */
+    }
+    
+    .hamburger {
+        display: flex; /* Show hamburger menu earlier */
+    }
+}
+
+/* Medium Devices (Tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    /* Navbar */
+    .nav-links {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    h1 {
+        font-size: 2.75rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Small Devices (Landscape Phones, less than 768px) */
+@media (max-width: 767.98px) {
+    body {
+        -webkit-text-size-adjust: 100%; /* Prevent font scaling on iOS */
+    }
+
+    .container {
+        max-width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    
+        /* Navbar */
+    .navbar-actions {
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .navbar-actions .cta-button {
+        flex-shrink: 0; /* Prevent button from shrinking */
+    }
+
+    .navbar {
+        padding: 0.75rem 0;
+    }
+    
+    .logo-img {
+        height: 2rem;
+    }
+    
+    .logo-text {
+        font-size: 1.25rem;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 1.5rem; /* Larger tap target */
+        font-size: 1rem;
+    }
+    
+    .theme-toggle {
+        width: 3.2rem;
+        height: 1.6rem;
+        font-size: 0.75rem;
+    }
+    
+    .theme-toggle::before {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    
+    body.dark-mode .theme-toggle::before {
+        transform: translateX(1.6rem);
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem; /* Increased gap */
+        width: 100%;
+        max-width: 320px; /* Wider for easier tapping */
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    section {
+        padding: 3.5rem 0;
+    }
+}
+
+/* Key Advantages Section */
+@media (max-width: 991.98px) {
+    .advantages-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 767.98px) {
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Projects Section --- */
+@media (max-width: 991.98px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .projects-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* --- Services Section --- */
+@media (max-width: 991.98px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Pricing Section --- */
+@media (max-width: 991.98px) {
+    .pricing-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card.featured {
+        transform: translateY(0);
+    }
+}
+
+/* --- Contact Section --- */
+@media (max-width: 767.98px) {
+    .contact-form .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+        padding: 1rem; /* Easier to tap */
+        font-size: 1rem;
+    }
+}
+
+/* --- Footer --- */
+@media (max-width: 767.98px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .social-icon-link {
+        font-size: 1rem;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+    
+    /* Navbar */
+        .navbar-actions {
+        gap: 1rem;
+        align-items: center; /* Vertically align items */
+    }
+
+    .navbar-actions .cta-button {
+        flex-shrink: 0; /* Prevent button from shrinking */
+    }
+    
+    .logo-img {
+        height: 1.75rem;
+    }
+    
+    .logo-text {
+        font-size: 1.1rem;
+    }
+    
+    .cta-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .theme-toggle {
+        width: 3rem;
+        height: 1.5rem;
+        font-size: 0.7rem;
+        padding: 0 0.25rem;
+    }
+    
+    .theme-toggle::before {
+        width: 1.1rem;
+        height: 1.1rem;
+        top: 0.2rem;
+    }
+    
+    body.dark-mode .theme-toggle::before {
+        transform: translateX(1.5rem);
+    }
+    
+    .mobile-nav-links .nav-link {
+        font-size: 1.25rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    section {
+        padding: 3rem 0;
+    }
+    
+    .hero {
+        padding-top: 6rem;
+    }
+}
+
+/* Very Small Devices (Small Portrait Phones, less than 400px) */
+@media (max-width: 399.98px) {
+    /* Navbar */
+    .logo-text {
+        font-size: 1rem;
+    }
+    
+    .navbar-actions {
+        gap: 0.5rem;
+    }
+    
+    .cta-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .theme-toggle {
+        width: 2.8rem;
+        height: 1.4rem;
+        font-size: 0.65rem;
+        padding: 0 0.2rem;
+    }
+    
+    .theme-toggle::before {
+        width: 1rem;
+        height: 1rem;
+        top: 0.2rem;
+    }
+    
+    body.dark-mode .theme-toggle::before {
+        transform: translateX(1.4rem);
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.35rem;
+    }
+}
